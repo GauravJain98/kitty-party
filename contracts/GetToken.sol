@@ -16,8 +16,8 @@ contract Airdrop is Ownable {
     constructor(address add) {
         token = add;
         amount = 0;
-        // current = 0;
-        expiry = block.number + 2;
+        current = 0;
+        expiry = 2;
     }
 
     function gamble(address add, uint256 a) external {
